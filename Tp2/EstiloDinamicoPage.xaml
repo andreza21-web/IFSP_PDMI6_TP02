@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tp2.EstiloDinamicoPage" Title="Estilo Dinamico">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar Placeholder="Pesquisar"/>
+            <Button Text="ALTERAR ESTILO" TextColor="Black"  BackgroundColor="#999999"/>
+            <Label Text="Horário" HorizontalOptions="Center" Margin="0,25,0,0" TextColor="BLUE"/>
+            <Label Text="{Binding DateTime,StringFormat='{0:d/M/yyyy HH:mm:ss}'}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="BLUE">
+                
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
