@@ -15,6 +15,13 @@ namespace Tp2
         public EstiloDinamicoPage()
         {
             InitializeComponent();
+             Device.StartTimer(TimeSpan.FromSeconds(1), timeLocal);
+        }
+
+         bool timeLocal()
+        {
+            lblTime.Text = DateTime.Now.ToString("dd / MM / yyyy HH : mm : ss");
+            return true;
         }
     }
 }

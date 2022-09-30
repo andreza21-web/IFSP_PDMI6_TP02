@@ -7,9 +7,7 @@
             <SearchBar Placeholder="Pesquisar"/>
             <Button Text="ALTERAR ESTILO" TextColor="Black"  BackgroundColor="#999999"/>
             <Label Text="Horário" HorizontalOptions="Center" Margin="0,25,0,0" TextColor="BLUE"/>
-            <Label Text="{Binding DateTime,StringFormat='{0:d/M/yyyy HH:mm:ss}'}" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="BLUE">
-                
-            </Label>
+           <Label x:Name="lblTime" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="BLUE"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
